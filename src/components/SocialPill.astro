@@ -1,3 +1,13 @@
-<a href="" class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-[6px] transition-all duration-300 ease">
+---
+interface Props {
+      href?: string
+      title?: string
+}
+
+const { href, title } = Astro.props
+---
+
+<a href={href} title={title}  target="_blank" rel="noopener noreferrer" class="text-[#777] inline-flex items-center justify-center border border-gray-200 p-1 h-8 w-8 rounded-[6px] transition-all duration-300 ease hover:bg-[#eee] hover:border-[#ddd] hover:border-solid
+">
 <slot />
 </a>

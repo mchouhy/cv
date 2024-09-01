@@ -1,1 +1,34 @@
-<h2>Experience</h2>
+---
+import Section from "./Section.astro"
+import { work } from "@/cv"
+---
+
+<Section title="Experience">
+      <ul>
+            {work.map(({company, startDate, endDate, location, position, summary, employmentType }) => 
+            {
+                  const startYear = new Date(startDate).getFullYear()
+                  const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Now"
+                  const years = `${startYear} · ${endYear}`
+
+                  return (
+                        <li>
+                              <article>
+                                    <header class="flex justify-between items-start">
+                                          <div>
+                                          <h3>{company} · {employmentType}</h3>
+                                          <h3>{position}</h3>
+                                          </div>
+                                          <time>{years}</time>
+                                    </header>
+                                    <footer>
+                                          <p>{summary}</p>
+                                    </footer>
+                              </article>
+                        </li>
+                        )     
+                  }
+            )
+      }      
+      </ul>
+</Section>

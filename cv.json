@@ -1,36 +1,96 @@
 {
   "basics": {
     "name": "Mariano Chouhy",
-    "label": "+14 years experienced Lawyer turned Full Stack Developer. Committed to leveraging legal expertise for innovative tech solutions",
+    "label": "+14 years experienced Lawyer turned Full Stack Developer, leveraging legal expertise for innovative tech solutions",
     "image": "public/images/profile-pic.jpeg",
-    "email": "john@gmail.com",
-    "phone": "(912) 555-4321",
-    "url": "https://johndoe.com",
-    "summary": "A summary of John Doe…",
+    "email": "marianochouhy@gmail.com",
+    "phone": "+34613168703",
+    "url": "",
+    "summary": "With a robust legal background spanning over a decade and a newfound passion for technology, I've turned my focus to software development. Currently honing my skills in TypeScript, Next.js, Node.js, and Tailwind CSS, I craft intuitive front-end experiences. My unique journey from law to tech empowers me to bring a fresh, analytical approach to development, blending legal precision with code. I'm keen to join a tech team where my diverse expertise can fuel innovation and growth.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
+      "address": "Sierra de Atapuerca, 31",
+      "postalCode": "28050",
       "city": "Madrid",
       "countryCode": "ES",
-      "country": "España"
+      "country": "Spain"
     },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+    "networks": {
+      "Linkedin": {
+        "username": "mchouhy",
+        "url": "https://www.linkedin.com/in/mchouhy/"
+      },
+      "Github": {
+        "username": "mchouhy",
+        "url": "https://github.com/mchouhy"
       }
-    ]
+    }
   },
   "work": [
     {
-      "name": "Company",
-      "position": "President",
-      "url": "https://company.com",
-      "startDate": "2013-01-01",
-      "endDate": "2014-01-01",
-      "summary": "Description…",
-      "highlights": ["Started the company"]
+      "company": "Clau",
+      "location": "CDMX, Mexico",
+      "employmentType": "Part-time",
+      "position": "Frontend Developer",
+      "url": "https://www.clau.com",
+      "startDate": "2024-03-12",
+      "endDate": null,
+      "summary": "As a member of the development team, I focus on crafting the front-end for various platforms including Clau for Agents (FpA), Website, and Unified Admin console. My role involves integrating a suite of tools such as HubSpot, Zapier, Make, along with Flat's internal tools. On a daily basis, I work with TypeScript, Next.js, Node.js, and Tailwind CSS.",
+      "highlights": [""]
+    },
+    {
+      "company": "The Legal Department & Partners",
+      "location": "Madrid, Spain",
+      "employmentType": "Full-time",
+      "position": "Lawyer",
+      "url": "",
+      "startDate": "2022-02-05",
+      "endDate": null,
+      "summary": "I provide legal counsel across criminal, civil, and administrative litigation, conduct comprehensive legal investigations and draft settlements, appeals, and legal documentation for submission to national and international courts, including the European Court of Human Rights, Court of Justiceof the European Union, and Inter-American Court of Human Rights (CIDH).",
+      "highlights": [""]
+    },
+    {
+      "company": "Poder Judicial de la Nación Argentina",
+      "location": "Buenos Aires, Argentina",
+      "employmentType": "Full-time",
+      "position": "Court Clerk",
+      "url": "https://pjn.gov.ar",
+      "startDate": "2010-06-15",
+      "endDate": "2021-09-30",
+      "summary": "As Court Clerk, I led a 20-member team, managed workload, drafted resolutions, conducted criminal investigations, and advised judges. Achieved 7 promotions in 8 years. Introduced a jurisprudence search system, reducing errors. Implemented workload distribution system, decreasing case resolution delays. Became youngest Clerk of the Court.",
+      "highlights": [""]
+    },
+    {
+      "company": "Bazan, Cambré & Orts",
+      "location": "Buenos Aires, Argentina",
+      "employmentType": "Full-time",
+      "position": "Paralegal",
+      "url": "https://www.bcoabogados.com.ar/index.php/es/",
+      "startDate": "2010-03-15",
+      "endDate": "2010-06-14",
+      "summary": "As paralegal, my responsibilities encompass drafting legal documents, conducting legal research, interviewing clients, and monitoring judicial proceedings. Additionally, I provide support to attorneys across various legal domains including civil, commercial, labor, administrative, and criminal proceedings.",
+      "highlights": [""]
+    },
+    {
+      "company": "Aspen Skiing Company",
+      "location": "Aspen, Colorado",
+      "employmentType": "Full-time",
+      "position": "Proffesional Ski Instructor",
+      "url": "https://www.aspensnowmass.com/",
+      "startDate": "2008-12-05",
+      "endDate": "2009-03-15",
+      "summary": "Provided personalized skiing instruction to guests of all skill levels, ensuring a safe and enjoyable experience at Buttermilk Mountain. I'm a certified PSIA instructor.",
+      "highlights": [""]
+    },
+    {
+      "company": "Hertz",
+      "location": "Aspen, Colorado",
+      "employmentType": "Part-time",
+      "position": "Sales Agent",
+      "url": "https://www.hertz.com/us/en/location/unitedstates",
+      "startDate": "2008-12-18",
+      "endDate": "2009-03-15",
+      "summary": "Assisted customers with vehicle rentals, provided excellent customer service, and ensure smooth rental transactions.",
+      "highlights": [""]
     }
   ],
   "volunteer": [
