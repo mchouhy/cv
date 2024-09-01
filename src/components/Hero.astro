@@ -13,9 +13,9 @@ const { name, label, image, email, phone, networks, location } = basics
 <Section>
       <div class="flex items-center justify-between gap-4">
             <div class="flex flex-col gap-y-1"> 
-                  <h1 class="text-2xl font-semibold">{name}</h1>
-                  <p class="text-sm font-medium text-[#333] text-pretty md:pr-16 md:text-base">{label}</p>
-                  <span class="text-sm font-normal text-[#666] flex items-center gap-1">
+                  <h1 class="text-2xl font-bold">{name}</h1>
+                  <p class="text-sm font-medium text-[#333] text-pretty md:pr-16 md:text-base dark:text-white">{label}</p>
+                  <span class="text-sm font-normal text-[#666] flex items-center gap-1 dark:text-white">
                         <WorldMapSvg />
                         {location.city}, {location.country}
                   </span>

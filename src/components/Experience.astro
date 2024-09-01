@@ -4,20 +4,24 @@ import { work } from "@/cv"
 ---
 
 <Section title="Experience">
-      <ul>
-            {work.map(({company, startDate, endDate, location, position, summary, employmentType }) => 
+      <ul class="flex flex-col gap-4">
+            {work.map(({company, startDate, endDate, location, position, summary, employmentType, url }) => 
             {
                   const startYear = new Date(startDate).getFullYear()
-                  const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Now"
+                  const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Present"
                   const years = `${startYear} · ${endYear}`
+                  const link = url !== null ? url : null
+                  const hover = url !== null ? "hover:underline" : ""
 
                   return (
                         <li>
                               <article>
                                     <header class="flex justify-between items-start">
                                           <div>
-                                          <h3>{company} · {employmentType}</h3>
-                                          <h3>{position}</h3>
+                                                <a href={link} class={hover} target="_blank">
+                                                      <p class="text-base font-semibold text-[#222] dark:text-white">{company}</p>
+                                                </a>
+                                          <p class="text-base font-medium text-[#222] dark:text-white">{position}</p>
                                           </div>
                                           <time>{years}</time>
                                     </header>
