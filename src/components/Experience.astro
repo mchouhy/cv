@@ -1,38 +1,42 @@
 ---
-import Section from "./Section.astro"
-import { work } from "@/cv"
+import Section from './Section.astro';
+import { work } from '@/cv';
 ---
 
 <Section title="Experience">
-      <ul class="flex flex-col gap-4">
-            {work.map(({company, startDate, endDate, location, position, summary, employmentType, url }) => 
-            {
-                  const startYear = new Date(startDate).getFullYear()
-                  const endYear = endDate !== null ? new Date(endDate).getFullYear() : "Present"
-                  const years = `${startYear} · ${endYear}`
-                  const link = url !== null ? url : null
-                  const hover = url !== null ? "hover:underline" : ""
+  <ul class="flex flex-col gap-4">
+    {
+      work.map(({ company, startDate, endDate, position, summary, url }) => {
+        const startYear = new Date(startDate).getFullYear();
+        const endYear =
+          endDate !== null ? new Date(endDate).getFullYear() : 'Present';
+        const years = `${startYear} · ${endYear}`;
+        const link = url !== null ? url : null;
+        const hover = url !== null ? 'hover:underline' : '';
 
-                  return (
-                        <li>
-                              <article>
-                                    <header class="flex justify-between items-start">
-                                          <div>
-                                                <a href={link} class={hover} target="_blank">
-                                                      <p class="text-base font-semibold text-[#222] dark:text-white">{company}</p>
-                                                </a>
-                                          <p class="text-base font-medium text-[#222] dark:text-white">{position}</p>
-                                          </div>
-                                          <time>{years}</time>
-                                    </header>
-                                    <footer>
-                                          <p>{summary}</p>
-                                    </footer>
-                              </article>
-                        </li>
-                        )     
-                  }
-            )
-      }      
-      </ul>
+        return (
+          <li>
+            <article>
+              <header class="flex justify-between items-start">
+                <div>
+                  <a href={link} class={hover} target="_blank">
+                    <p class="text-base font-semibold text-[#222] dark:text-white">
+                      {company}
+                    </p>
+                  </a>
+                  <p class="text-base font-medium text-[#222] dark:text-white">
+                    {position}
+                  </p>
+                </div>
+                <time>{years}</time>
+              </header>
+              <footer>
+                <p>{summary}</p>
+              </footer>
+            </article>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Section>

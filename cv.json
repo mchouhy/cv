@@ -93,27 +93,53 @@
       "highlights": [""]
     }
   ],
-  "volunteer": [
-    {
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": ["Awarded 'Volunteer of the Month'"]
-    }
-  ],
   "education": [
     {
-      "institution": "University",
-      "url": "https://institution.com/",
+      "institution": "Coderhouse",
+      "url": "https://www.coderhouse.com/es/online/carrera-desarrollo-fullstack",
       "area": "Software Development",
-      "studyType": "Bachelor",
-      "startDate": "2011-01-01",
-      "endDate": "2013-01-01",
-      "score": "4.0",
-      "courses": ["DB1101 - Basic SQL"]
+      "studyType": "Course",
+      "startDate": "2023-04-01",
+      "endDate": "2024-07-23",
+      "summary": "Full Stack Development Career",
+      "courses": [
+        "JavaScript",
+        "React JS",
+        "HTML",
+        "CSS",
+        "Node JS",
+        "Mongo DB"
+      ]
+    },
+    {
+      "institution": "Universidad Carlos III de Madrid",
+      "url": "https://www.uc3m.es/master/derecho-penal",
+      "area": "Criminal Law",
+      "studyType": "Master",
+      "startDate": "2021-09-01",
+      "endDate": "2022-09-01",
+      "summary": "Master's Degree in Criminal Law and Procedural Law",
+      "courses": []
+    },
+    {
+      "institution": "Universidad Torcuato Di Tella",
+      "url": "https://www.utdt.edu/ver_contenido.php?id_contenido=908&id_item_menu=1132",
+      "area": "Tax Law",
+      "studyType": "Master",
+      "startDate": "2016-03-01",
+      "endDate": "2018-05-01",
+      "summary": "LL.M. in Tax Law",
+      "courses": []
+    },
+    {
+      "institution": "Universidad de Buenos Aires",
+      "url": "http://www.derecho.uba.ar/academica/carreras_grado/abogacia.php",
+      "area": "Law",
+      "studyType": "Bachelor of Laws",
+      "startDate": "2005-03-01",
+      "endDate": "2011-12-01",
+      "summary": "Law Degree",
+      "courses": []
     }
   ],
   "awards": [
@@ -143,9 +169,67 @@
   ],
   "skills": [
     {
-      "name": "Web Development",
+      "name": "HTML",
       "level": "Master",
-      "keywords": ["HTML", "CSS", "JavaScript"]
+      "keywords": ["HTML5", "Semantic HTML", "Web Accessibility"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["CSS3", "Responsive Design", "Flexbox", "Grid"]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["ES6+", "DOM Manipulation", "Async Programming", "Promises"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Intermediate",
+      "keywords": ["Utility-First CSS", "Responsive Design", "Customization"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Intermediate",
+      "keywords": ["Static Typing", "Interfaces", "Generics", "Type Inference"]
+    },
+    {
+      "name": "Node",
+      "level": "Intermediate",
+      "keywords": ["Express.js", "API Development", "Asynchronous Programming"]
+    },
+    {
+      "name": "Git",
+      "level": "Master",
+      "keywords": ["Version Control", "Branching", "Merging", "Rebasing"]
+    },
+    {
+      "name": "Github",
+      "level": "Master",
+      "keywords": [
+        "Repository Management",
+        "Pull Requests",
+        "CI/CD Integration"
+      ]
+    },
+    {
+      "name": "Next.js",
+      "level": "Intermediate",
+      "keywords": [
+        "Server-Side Rendering",
+        "Static Site Generation",
+        "API Routes"
+      ]
+    },
+    {
+      "name": "React",
+      "level": "Master",
+      "keywords": [
+        "Hooks",
+        "Component Lifecycle",
+        "State Management",
+        "Context API"
+      ]
     }
   ],
   "languages": [
