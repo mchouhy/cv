@@ -252,12 +252,60 @@
   ],
   "projects": [
     {
-      "name": "Project",
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "description": "Description...",
-      "highlights": ["Won award at AIHacks 2016"],
-      "url": "https://project.com/"
+      "name": "Clau.com",
+      "isActive": true,
+      "description": "Mexico’s largest real estate platform with over 80,000 properties.",
+      "highlights": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Node.js",
+        "MySQL"
+      ],
+      "url": "https://clau.com/"
+    },
+    {
+      "name": "CpA",
+      "isActive": true,
+      "description": "A unique platform designed for real estate professionals in Mexico.",
+      "highlights": [
+        "Next.js",
+        "React",
+        "Typescript",
+        "Tailwind",
+        "Node.js",
+        "MySQL"
+      ],
+      "url": "https://asesores.clau.com/"
+    },
+    {
+      "name": "Ache",
+      "isActive": false,
+      "description": "Conceptual online furniture store using React.",
+      "highlights": ["React", "Node.js"],
+      "url": "https://ache-sable.vercel.app/"
+    },
+    {
+      "name": "Gaucha",
+      "isActive": false,
+      "description": "Conceptual luxury jewelry brand website using HTML and CSS.",
+      "highlights": ["HTML", "CSS", "Bootstrap"],
+      "url": "https://mchouhy.github.io/gaucha/"
+    },
+    {
+      "name": "Pixel Converter",
+      "isActive": false,
+      "description": "Absolute & relative CSS length units converter using JavaScript.",
+      "highlights": ["HTML", "CSS", "Javascript"],
+      "url": "https://mchouhy.github.io/pixelconverter/"
+    },
+    {
+      "name": "Palindrome Checker",
+      "isActive": false,
+      "description": "Checks whether a word is a palindrome usign Javascript.",
+      "highlights": ["HTML", "CSS", "Javascript"],
+      "url": "https://mchouhy.github.io/palindromeChecker/"
     }
   ]
 }
