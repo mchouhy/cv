@@ -51,7 +51,7 @@
     {
       "company": "Poder Judicial de la Nación Argentina",
       "location": "Buenos Aires, Argentina",
-      "employmentType": "Full-time",
+      "employmentType": null,
       "position": "Court Clerk",
       "url": "https://pjn.gov.ar",
       "startDate": "2010-06-15",
@@ -62,7 +62,7 @@
     {
       "company": "Bazan, Cambré & Orts",
       "location": "Buenos Aires, Argentina",
-      "employmentType": "Full-time",
+      "employmentType": null,
       "position": "Paralegal",
       "url": "https://www.bcoabogados.com.ar/index.php/es/",
       "startDate": "2010-03-15",
@@ -73,7 +73,7 @@
     {
       "company": "Aspen Skiing Company",
       "location": "Aspen, Colorado",
-      "employmentType": "Full-time",
+      "employmentType": null,
       "position": "Proffesional Ski Instructor",
       "url": "https://www.aspensnowmass.com/",
       "startDate": "2008-12-05",
@@ -84,7 +84,7 @@
     {
       "company": "Hertz",
       "location": "Aspen, Colorado",
-      "employmentType": "Part-time",
+      "employmentType": null,
       "position": "Sales Agent",
       "url": "https://www.hertz.com/us/en/location/unitedstates",
       "startDate": "2008-12-18",
