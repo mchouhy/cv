@@ -282,7 +282,7 @@
     {
       "name": "Ache",
       "isActive": false,
-      "description": "Conceptual online furniture store using React.",
+      "description": "Conceptual furniture online store using React.",
       "highlights": ["React", "Node.js"],
       "url": "https://ache-sable.vercel.app/"
     },
@@ -303,7 +303,7 @@
     {
       "name": "Palindrome Checker",
       "isActive": false,
-      "description": "Checks whether a word is a palindrome usign Javascript.",
+      "description": "Checks whether a word is a palindrome or not usign Javascript.",
       "highlights": ["HTML", "CSS", "Javascript"],
       "url": "https://mchouhy.github.io/palindromeChecker/"
     }
