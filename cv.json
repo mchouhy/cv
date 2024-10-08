@@ -101,7 +101,7 @@
       "studyType": "Course",
       "startDate": "2023-04-01",
       "endDate": "2024-07-23",
-      "summary": "Full Stack Development Career",
+      "summary": "Full Stack Development Career.",
       "courses": [
         "JavaScript",
         "React JS",
@@ -118,7 +118,7 @@
       "studyType": "Master",
       "startDate": "2021-09-01",
       "endDate": "2022-09-01",
-      "summary": "Master's Degree in Criminal Law and Procedural Law",
+      "summary": "Master in Criminal Law and Procedural Law.",
       "courses": []
     },
     {
@@ -128,7 +128,7 @@
       "studyType": "Master",
       "startDate": "2016-03-01",
       "endDate": "2018-05-01",
-      "summary": "LL.M. in Tax Law",
+      "summary": "LL.M. in Tax Law.",
       "courses": []
     },
     {
@@ -138,7 +138,7 @@
       "studyType": "Bachelor of Laws",
       "startDate": "2005-03-01",
       "endDate": "2011-12-01",
-      "summary": "Law Degree",
+      "summary": "Bachelor of Laws.",
       "courses": []
     }
   ],
@@ -194,7 +194,7 @@
       "keywords": ["Static Typing", "Interfaces", "Generics", "Type Inference"]
     },
     {
-      "name": "Node",
+      "name": "Node.js",
       "level": "Intermediate",
       "keywords": ["Express.js", "API Development", "Asynchronous Programming"]
     },

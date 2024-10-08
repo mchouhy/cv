@@ -1,49 +1,95 @@
 ---
-import { basics } from "@/cv";
-import WorldMapSvg from "@/icons/WorldMapSvg.astro";
-import MailSvg from "@/icons/MailSvg.astro";
-import PhoneSvg from "@/icons/PhoneSvg.astro";
-import LinkedInSvg from "@/icons/LinkedInSvg.astro";
-import GithubSvg from "@/icons/GithubSvg.astro";
-import Section from "@/components/Section.astro";
-import SocialPill from "@/components/SocialPill.astro"
+import { basics } from '@/cv';
+import WorldMapSvg from '@/icons/WorldMapSvg.astro';
+import MailSvg from '@/icons/MailSvg.astro';
+import PhoneSvg from '@/icons/PhoneSvg.astro';
+import LinkedInSvg from '@/icons/LinkedInSvg.astro';
+import GithubSvg from '@/icons/GithubSvg.astro';
+import Section from '@/components/Section.astro';
+import SocialPill from '@/components/SocialPill.astro';
 
-const { name, label, image, email, phone, networks, location } = basics
+const { name, label, image, email, phone, networks, location } = basics;
 ---
+
 <Section>
-      <div class="flex items-center justify-between gap-4">
-            <div class="flex flex-col gap-y-1"> 
-                  <h1 class="text-2xl font-bold">{name}</h1>
-                  <p class="text-sm font-medium text-[#333] text-pretty md:pr-16 md:text-base dark:text-white">{label}</p>
-                  <span class="text-sm font-normal text-[#666] flex items-center gap-1 dark:text-white">
-                        <WorldMapSvg />
-                        {location.city}, {location.country}
-                  </span>
-                  <footer class="flex gap-2 mt-2">
-                        { email && ( 
-                              <SocialPill href={`mailto:${email}`}>
-                                    <MailSvg />
-                              </SocialPill>
-                        )}
-                        { phone && ( 
-                              <SocialPill href={`tel:${phone}`}>
-                                    <PhoneSvg />
-                              </SocialPill>
-                        )}
-                        { networks.Linkedin && (
-                              <SocialPill href={networks.Linkedin.url}>
-                                    <LinkedInSvg />
-                              </SocialPill>
-                         )}
-                         { networks.Github && ( 
-                               <SocialPill href={networks.Github.url}>
-                                     <GithubSvg />
-                               </SocialPill>
-                         )}
-                  </footer>
-            </div>
-            <figure>
-                  <img src={image} alt="profile picture" class="aspect-square object-cover rounded-2xl w-full h-full md:w-48">
-            </figure>
+  <div class="flex items-center justify-between gap-4">
+    <div class="flex flex-col gap-y-1">
+      <h1 class="text-2xl font-bold">{name}</h1>
+      <p
+        class="text-sm font-medium text-[#333] text-pretty md:pr-16 md:text-base dark:text-white"
+      >
+        {label}
+      </p>
+      <span
+        class="text-sm font-normal text-[#666] flex items-center gap-1 dark:text-white"
+      >
+        <WorldMapSvg />
+        {location.city}, {location.country}
+      </span>
+      <div class="flex-col gap-1 hidden print-info">
+        <span class="flex items-center gap-1">
+          <p>
+            <MailSvg className="w-2.5 h-2.5 me-1 text-[#666]" />
+          </p>
+          <p class="text-sm text-[#666]">{email}</p>
+        </span>
+        <span class="flex items-center gap-1">
+          <p>
+            <PhoneSvg className="w-2.5 h-2.5 me-1 text-[#666]" />
+          </p>
+          <p class="text-sm text-[#666]">{phone}</p>
+        </span>
+        <span class="flex items-center gap-1">
+          <p>
+            <LinkedInSvg className="w-2.5 h-2.5 me-1 text-[#666]" />
+          </p>
+          <p class="text-sm text-[#666]">{networks.Linkedin.url}</p>
+        </span>
       </div>
+      <footer class="flex gap-2 mt-2 print:hidden">
+        {
+          email && (
+            <SocialPill href={`mailto:${email}`}>
+              <MailSvg />
+            </SocialPill>
+          )
+        }
+        {
+          phone && (
+            <SocialPill href={`tel:${phone}`}>
+              <PhoneSvg />
+            </SocialPill>
+          )
+        }
+        {
+          networks.Linkedin && (
+            <SocialPill href={networks.Linkedin.url}>
+              <LinkedInSvg />
+            </SocialPill>
+          )
+        }
+        {
+          networks.Github && (
+            <SocialPill href={networks.Github.url}>
+              <GithubSvg />
+            </SocialPill>
+          )
+        }
+      </footer>
+    </div>
+    <figure>
+      <img
+        src={image}
+        alt="profile picture"
+        class="aspect-square object-cover rounded-2xl w-full h-full md:w-48"
+      />
+    </figure>
+  </div>
 </Section>
+<style>
+  @media print {
+    .print-info {
+      display: flex;
+    }
+  }
+</style>
