@@ -4,11 +4,11 @@ import { projects } from '@/cv';
 ---
 
 <Section title="Projects">
-  <ul class="grid gap-4 template-columns">
+  <ul class="grid gap-4 template-columns auto-rows-fr">
     {
       projects.map(({ name, isActive, description, highlights, url }) => {
         return (
-          <li>
+          <li class="h-full">
             <article class="flex flex-col gap-3 border border-[#f2f2f2] rounded-xl p-4 h-full">
               <header class="flex flex-col gap-1">
                 <div class="flex flex-wrap gap-2">
@@ -25,7 +25,7 @@ import { projects } from '@/cv';
                 </div>
                 <p class="text-sm leading-5 text-wrap">{description}</p>
               </header>
-              <footer>
+              <footer class="mt-auto">
                 <ul class="inline-flex gap-2 flex-wrap">
                   {highlights &&
                     highlights.map((highlight) => {
