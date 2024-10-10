@@ -1,18 +1,45 @@
 ---
 import Section from './Section.astro';
 import { skills } from '@/cv';
+import HTML from '@/icons/HTML.astro';
+import CSS from '@/icons/CSS.astro';
+import JavaScript from '@/icons/JavaScript.astro';
+import TypeScript from '@/icons/TypeScript.astro';
+import Tailwind from '@/icons/Tailwind.astro';
+import NodeJs from '@/icons/NodeJs.astro';
+import Git from '@/icons/Git.astro';
+import Github from '@/icons/Github.astro';
+import NextJs from '@/icons/NextJs.astro';
+import React from '@/icons/React.astro';
+
+const SKILLS_ICONS: Record<string, any> = {
+  HTML,
+  CSS,
+  JavaScript,
+  TypeScript,
+  Tailwind,
+  NodeJs,
+  Git,
+  Github,
+  NextJs,
+  React
+};
 ---
 
 <Section title="Skills">
   <ul class="inline-flex gap-2 flex-wrap">
     {
-      skills.map(({ name }) => (
-        <li>
-          <span class="rounded-md border bg-[#eee] py-0.5 px-2 font-medium text-sm dark:text-white dark:bg-slate-900">
-            {name}
-          </span>
-        </li>
-      ))
+      skills.map(({ name }) => {
+        const iconName =
+          name === 'Next.js' ? 'Next' : name === 'Node.js' ? 'NodeJs' : name;
+        const Icon = SKILLS_ICONS[iconName];
+        return (
+          <li class="flex gap-1 items-center rounded-md border bg-[#eee] py-0.5 px-2 font-medium text-sm dark:text-white dark:bg-slate-900">
+            <span>{Icon && <Icon />}</span>
+            <span class="">{name}</span>
+          </li>
+        );
+      })
     }
   </ul>
 </Section>

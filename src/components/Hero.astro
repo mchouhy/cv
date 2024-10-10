@@ -1,10 +1,10 @@
 ---
 import { basics } from '@/cv';
-import WorldMapSvg from '@/icons/WorldMapSvg.astro';
-import MailSvg from '@/icons/MailSvg.astro';
-import PhoneSvg from '@/icons/PhoneSvg.astro';
-import LinkedInSvg from '@/icons/LinkedInSvg.astro';
-import GithubSvg from '@/icons/GithubSvg.astro';
+import WorldMap from '@/icons/WorldMap.astro';
+import Mail from '@/icons/Mail.astro';
+import Phone from '@/icons/Phone.astro';
+import LinkedIn from '@/icons/LinkedIn.astro';
+import Github from '@/icons/Github.astro';
 import Section from '@/components/Section.astro';
 import SocialPill from '@/components/SocialPill.astro';
 
@@ -23,25 +23,25 @@ const { name, label, image, email, phone, networks, location } = basics;
       <span
         class="text-sm font-normal text-[#666] flex items-center gap-1 dark:text-slate-100"
       >
-        <WorldMapSvg />
+        <WorldMap />
         {location.city}, {location.country}
       </span>
       <div class="flex-col gap-1 hidden print-info">
         <span class="flex items-center gap-1">
           <p>
-            <MailSvg className="w-2.5 h-2.5 me-1 text-[#666]" />
+            <Mail className="w-2.5 h-2.5 me-1 text-[#666]" />
           </p>
           <p class="text-sm text-[#666]">{email}</p>
         </span>
         <span class="flex items-center gap-1">
           <p>
-            <PhoneSvg className="w-2.5 h-2.5 me-1 text-[#666]" />
+            <Phone className="w-2.5 h-2.5 me-1 text-[#666]" />
           </p>
           <p class="text-sm text-[#666]">{phone}</p>
         </span>
         <span class="flex items-center gap-1">
           <p>
-            <LinkedInSvg className="w-2.5 h-2.5 me-1 text-[#666]" />
+            <LinkedIn className="w-2.5 h-2.5 me-1 text-[#666]" />
           </p>
           <p class="text-sm text-[#666]">{networks.Linkedin.url}</p>
         </span>
@@ -50,28 +50,28 @@ const { name, label, image, email, phone, networks, location } = basics;
         {
           email && (
             <SocialPill href={`mailto:${email}`}>
-              <MailSvg />
+              <Mail />
             </SocialPill>
           )
         }
         {
           phone && (
             <SocialPill href={`tel:${phone}`}>
-              <PhoneSvg />
+              <Phone />
             </SocialPill>
           )
         }
         {
           networks.Linkedin && (
             <SocialPill href={networks.Linkedin.url}>
-              <LinkedInSvg />
+              <LinkedIn />
             </SocialPill>
           )
         }
         {
           networks.Github && (
             <SocialPill href={networks.Github.url}>
-              <GithubSvg />
+              <Github />
             </SocialPill>
           )
         }
