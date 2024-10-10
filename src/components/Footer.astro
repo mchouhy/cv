@@ -11,10 +11,27 @@ import CMD from '@/icons/CMD.astro';
   open the command menu.
 </footer>
 <footer
-  class="md:hidden fixed bottom-1 right-1 border-solid border-slate-300 bg-[#eee] border rounded-full"
+  class="md:hidden fixed bottom-2 right-2 border-solid border-slate-300 bg-[#eee] dark:bg-slate-900 border rounded-xl"
 >
   <button id="cmd-btn" class="p-1"><CMD /></button>
 </footer>
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  footer {
+    view-timeline: --revealing;
+    view-timeline-axis: block;
+    animation: linear 0.3s fadeIn;
+    animation-timeline: --revealing;
+    animation-range: entry 100% cover 10%;
+  }
+</style>
 <script>
   const button = document.getElementById('cmd-btn');
   button?.addEventListener('click', () => {
