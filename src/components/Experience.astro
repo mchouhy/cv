@@ -30,24 +30,24 @@ import { work } from '@/cv';
                   <div>
                     <div class="flex items-center">
                       <a href={link} class={`${hover}`} target="_blank">
-                        <p class="text-base font-semibold text-[#222] mr-3 dark:text-white">
+                        <p class="text-base font-semibold text-[#222] mr-3 dark:text-slate-100">
                           {company}
                         </p>
                       </a>
                       {employmentType && (
-                        <span class="rounded-md border bg-[#eee] py-0.5 px-1 font-medium text-xs dark:bg-black">
+                        <span class="rounded-md border bg-[#eee] py-0.5 px-1 font-medium text-xs dark:bg-slate-900">
                           {employmentType}
                         </span>
                       )}
                     </div>
-                    <p class="text-base font-medium text-[#222] dark:text-white">
+                    <p class="text-base font-medium text-[#222] dark:text-slate-100">
                       {position}
                     </p>
                   </div>
                   <time>{years}</time>
                 </header>
                 <footer>
-                  <p>{summary}</p>
+                  <p class="dark:text-slate-300">{summary}</p>
                 </footer>
               </article>
             </li>

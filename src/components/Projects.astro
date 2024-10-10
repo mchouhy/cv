@@ -24,14 +24,16 @@ import { projects } from '@/cv';
                     &bull;
                   </h4>
                 </div>
-                <p class="text-sm leading-5 text-wrap">{description}</p>
+                <p class="text-sm leading-5 text-wrap dark:text-slate-300">
+                  {description}
+                </p>
               </header>
               <footer class="mt-auto">
                 <ul class="inline-flex gap-2 flex-wrap">
                   {highlights &&
                     highlights.map((highlight) => {
                       return (
-                        <li class="rounded-md border bg-[#eee] py-0.5 px-2 font-medium text-[0.6rem] dark:bg-black">
+                        <li class="rounded-md border bg-[#eee] py-0.5 px-2 font-medium text-[0.6rem] dark:bg-slate-900">
                           {highlight}
                         </li>
                       );

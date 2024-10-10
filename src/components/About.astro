@@ -1,9 +1,9 @@
 ---
-import Section from "./Section.astro"
-import { basics } from "@/cv"
-const { summary } = basics
+import Section from './Section.astro';
+import { basics } from '@/cv';
+const { summary } = basics;
 ---
 
 <Section title="About">
-      <p>{summary}</p>
+  <p class="dark:text-slate-300">{summary}</p>
 </Section>
