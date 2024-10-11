@@ -17,13 +17,12 @@ import { education } from '@/cv';
         return (
           <li>
             <article>
-              <header class="flex justify-between items-start">
+              <header class="flex flex-col xs:flex-row justify-between items-start">
                 <a href={link} class={hover} target="_blank">
                   <p class="text-base font-semibold text-[#222] dark:text-slate-100">
                     {institution}
                   </p>
                 </a>
-
                 <time>{years}</time>
               </header>
               <footer>

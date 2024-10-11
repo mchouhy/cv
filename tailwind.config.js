@@ -3,7 +3,11 @@ export default {
   darkMode: 'selector',
   content: ['./src/**/*.{astro,js,jsx,ts,tsx}'],
   theme: {
-    extend: {}
+    extend: {
+      screens: {
+        xs: '464px'
+      }
+    }
   },
   plugins: []
 };
