@@ -31,12 +31,12 @@ const SKILLS_ICONS: Record<string, any> = {
     {
       skills.map(({ name }) => {
         const iconName =
-          name === 'Next.js' ? 'Next' : name === 'Node.js' ? 'NodeJs' : name;
+          name === 'Next.js' ? 'NextJs' : name === 'Node.js' ? 'NodeJs' : name;
         const Icon = SKILLS_ICONS[iconName];
         return (
-          <li class="flex gap-1 items-center rounded-md border bg-[#eee] py-0.5 px-2 font-medium text-sm dark:text-white dark:bg-slate-900">
+          <li class="flex gap-1 items-center justify-center rounded-md border bg-[#eee] py-0.5 px-2 font-medium text-sm dark:text-white dark:bg-slate-900">
             <span>{Icon && <Icon />}</span>
-            <span class="">{name}</span>
+            <span>{name}</span>
           </li>
         );
       })
