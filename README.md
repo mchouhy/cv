@@ -1,3 +1,22 @@
+# Online CV with JSON
+
+![Screenshot](/public/images/Captura%20de%20pantalla%202024-10-14%20a%20las%2018.43.04.png)
+
+This project is an online CV generator based on a JSON file, allowing anyone to create and customize their own résumé by simply editing the JSON file. Key features include:
+
+- **Printable**: The CV is optimized for printing.
+- **PDF Download**: Easily download the CV in PDF format with one click.
+- **Dark/Light Mode**: Offers the option to switch between dark and light themes for better accessibility and personalization.
+
+### Inspiration
+
+This project is based on the original idea by [Bartosz Jarocki](https://github.com/BartoszJarocki/cv), which uses a JSON file as the source for the CV. The design is inspired by [midudev’s project](https://github.com/midudev/minimalist-portfolio-json).
+
+### Added Features
+
+- Dark and light modes.
+- Option to download the CV in PDF format.
+
 # Astro Starter Kit: Basics
 
 ```sh
