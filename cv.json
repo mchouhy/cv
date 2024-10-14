@@ -283,7 +283,7 @@
       "name": "Ache",
       "isActive": false,
       "description": "Conceptual furniture online store using React.",
-      "highlights": ["React", "Node.js"],
+      "highlights": ["React", "Node.js", "MongoDB", "Firebase"],
       "url": "https://ache-sable.vercel.app/"
     },
     {
