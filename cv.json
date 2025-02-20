@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Mariano Chouhy",
-    "label": "+14 years experienced Lawyer turned Full Stack Developer, leveraging legal expertise for innovative tech solutions",
+    "label": "Frontend Developer with 14+ years of experience, leveraging a background in law to deliver clear, organized, and collaborative solutions. Strong in communication, ownership, and documentation.",
     "image": "/images/profile-pic.jpeg",
     "email": "marianochouhy@gmail.com",
     "phone": "+34613168703",
     "url": "",
-    "summary": "With a robust legal background spanning over a decade and a newfound passion for technology, I've turned my focus to software development. Currently honing my skills in TypeScript, Next.js, Node.js, and Tailwind CSS, I craft intuitive front-end experiences. My unique journey from law to tech empowers me to bring a fresh, analytical approach to development, blending legal precision with code. I'm keen to join a tech team where my diverse expertise can fuel innovation and growth.",
+    "summary": "Frontend Developer skilled in TypeScript, Next.js, Node.js, and Tailwind CSS. After more than a decade in the legal field, I transitioned into web development, applying analytical thinking, organization, and precision to every project. I’m passionate about building intuitive and efficient user interfaces, combining strong communication and documentation skills with technology to create clear and scalable solutions. Eager to contribute my unique perspective to a dynamic and innovative team.",
     "location": {
       "address": "Sierra de Atapuerca, 31",
       "postalCode": "28050",
@@ -29,7 +29,7 @@
     {
       "company": "Clau",
       "location": "CDMX, Mexico",
-      "employmentType": "Part-time",
+      "employmentType": "Full-time",
       "position": "Frontend Developer",
       "url": "https://www.clau.com",
       "startDate": "2024-03-12",
@@ -40,7 +40,7 @@
     {
       "company": "The Legal Department & Partners",
       "location": "Madrid, Spain",
-      "employmentType": "Full-time",
+      "employmentType": "Part-time",
       "position": "Lawyer",
       "url": null,
       "startDate": "2022-02-05",
@@ -138,7 +138,7 @@
       "studyType": "Bachelor of Laws",
       "startDate": "2005-03-01",
       "endDate": "2011-12-01",
-      "summary": "Bachelor of Laws.",
+      "summary": "Law Degree.",
       "courses": []
     }
   ],
@@ -254,7 +254,7 @@
     {
       "name": "Clau.com",
       "isActive": true,
-      "description": "Mexico’s largest real estate platform with over 80,000 properties.",
+      "description": "Collaborated in Mexico’s largest real estate platform with over 80,000 properties.",
       "highlights": [
         "Next.js",
         "React",
@@ -268,7 +268,7 @@
     {
       "name": "CpA",
       "isActive": true,
-      "description": "A unique platform designed for real estate professionals in Mexico.",
+      "description": "Collaborated in a unique platform designed for real estate professionals in Mexico.",
       "highlights": [
         "Next.js",
         "React",
@@ -282,28 +282,28 @@
     {
       "name": "Ache",
       "isActive": false,
-      "description": "Conceptual furniture online store using React.",
+      "description": "Developed a conceptual furniture online store using React.",
       "highlights": ["React", "Node.js", "MongoDB", "Firebase"],
       "url": "https://ache-sable.vercel.app/"
     },
     {
       "name": "Gaucha",
       "isActive": false,
-      "description": "Conceptual luxury jewelry brand website using HTML and CSS.",
+      "description": "Developed a conceptual luxury jewelry brand website using HTML and CSS.",
       "highlights": ["HTML", "CSS", "Bootstrap"],
       "url": "https://mchouhy.github.io/gaucha/"
     },
     {
       "name": "Pixel Converter",
       "isActive": false,
-      "description": "Absolute & relative CSS length units converter using JavaScript.",
+      "description": "Developed an absolute & relative CSS length units converter using JavaScript.",
       "highlights": ["HTML", "CSS", "Javascript"],
       "url": "https://mchouhy.github.io/pixelconverter/"
     },
     {
       "name": "Palindrome Checker",
       "isActive": false,
-      "description": "Checks whether a word is a palindrome or not usign Javascript.",
+      "description": "Developed Checks whether a word is a palindrome or not usign Javascript.",
       "highlights": ["HTML", "CSS", "Javascript"],
       "url": "https://mchouhy.github.io/palindromeChecker/"
     }
